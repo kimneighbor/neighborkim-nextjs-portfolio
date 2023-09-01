@@ -13,7 +13,7 @@ export default function Home() {
         <meta name="description" content="test content~!"></meta>
         <link rel="icon" href="/favicon.ico" />
 
-        <h1>home 부분</h1>
+        <h1 className="text-3xl font-bold underline">home 부분</h1>
 
         
         </Layout>
