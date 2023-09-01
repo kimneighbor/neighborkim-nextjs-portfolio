@@ -10,7 +10,8 @@ export default function Home() {
         <meta name="description" content="test content~!"></meta>
         <link rel="icon" href="/favicon.ico" />
 
-        <h1>test index</h1>
+        <h1>home 부분</h1>
+        <header></header>
         
 
 
