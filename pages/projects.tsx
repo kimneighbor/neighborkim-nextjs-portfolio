@@ -42,8 +42,10 @@ export async function getStaticProps() {
             // 정렬 적용
             sorts: [
                 {
-                    "property": "Name",
-                    "direction": "ascending"
+                    // 날짜별 정렬
+                    "property": "WorkPeriod",
+                    // 내림차순
+                    "direction": "descending"
                 }
             ],
             page_size: 100
