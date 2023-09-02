@@ -1,6 +1,7 @@
 import Layout from "./components/layout";
 import {TOKEN, DATABASE_ID} from "@/config";
 import HEAD from "next/head";
+import ProjectItem from "./components/projects/project-item";
 
 
 export default function Projects({projects}: any) {
@@ -16,7 +17,7 @@ export default function Projects({projects}: any) {
             <h1>프로젝트 진행 수 : {projects.results.length}</h1>
 
             {projects.results.map((aProject: any) => (
-                <h1>{aProject.properties.Name.title[0].plain_text}</h1>
+                <ProjectItem key={aProject.id} data={aProject}/>
             ))}
 
 
