@@ -9,8 +9,8 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-      <title>title NeighborKim</title>
-      <meta name="description" content="test content~!"></meta>
+      <title>NeighborKim.com</title>
+      <meta name="description" content="Learn Next.js"></meta>
       <link rel="icon" href="/favicon.ico" />
 
       <Layout>
