@@ -20,7 +20,8 @@ export default function DarkToggleButton() {
         dark:text-slate-400
         dark:hover:bg-slate-700
         rounded text-base mt-4 
-        md:mt-0"
+        md:mt-0
+        "
         type="button"
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       >
