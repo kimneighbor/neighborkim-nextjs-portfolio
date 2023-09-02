@@ -12,9 +12,10 @@ export default function ProjectItem({data}:any){
         <div className="p-6 m-3 bg-slate-700 rounded-md">
 
             <Image
+                alt={title}
                 src={imgSrc}
-                width="100%"
-                height="60%"
+                width={300}
+                height={100}
 
             />
             <h1>{title}</h1>
