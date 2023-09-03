@@ -14,11 +14,29 @@ export default function Projects({projects}: any) {
                 <link rel="icon" href="/favicon.ico"/>
             </HEAD>
 
-            <h1>프로젝트 진행 수 : {projects.results.length}</h1>
 
-            {projects.results.map((aProject: any) => (
-                <ProjectItem key={aProject.id} data={aProject}/>
-            ))}
+            <div className="container px-5 py-24 mx-auto">
+                <div className="flex flex-wrap w-full mb-20">
+                    <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
+                        <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Notion API
+                            / Projects : {projects.results.length}</h1>
+                        <div className="h-1 w-20 bg-indigo-500 rounded"></div>
+                    </div>
+                    <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
+                        프로젝트 깃허브 주소를 클릭하면 코드를 확인할 수 있습니다. 더 많은 내용을 보고 싶다면 깃허브 주소에서 확인해주세요.
+                        이 섹션은 노션 API를 연동해서 만들었습니다. 최초 로딩 시 데이터가 호출되고 이후 변동사항은 새로고침 후 적용됩니다.
+                    </p>
+                </div>
+            </div>
+
+
+
+            <div className="flex flex-wrap -m-4">
+                {/*project-item*/}
+                {projects.results.map((aProject: any) => (
+                    <ProjectItem key={aProject.id} data={aProject}/>
+                ))}
+            </div>
 
 
         </Layout>
