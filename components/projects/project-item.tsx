@@ -6,6 +6,7 @@ export default function ProjectItem({data}: any) {
     const title = data.properties.Name.title[0].plain_text
     const subtitle = data.properties.Subtitle.rich_text[0]?.plain_text
     const github = data.properties.Github.url
+    const velog = data.properties.Velog.url
     const description = data.properties.Description.rich_text[0]?.plain_text
     const imgSrc = data.cover.file?.url || data.cover.external.url
     const tags = data.properties.Tags.multi_select
@@ -28,6 +29,12 @@ export default function ProjectItem({data}: any) {
                 {github && (
                     <a href={github} target="_blank" rel="noopener noreferrer">
                         <GitHubLink/>
+                    </a>
+                )}
+
+                {velog && (
+                    <a href={velog} target="_blank" rel="noopener noreferrer">
+                        <VelogLink/>
                     </a>
                 )}
 
