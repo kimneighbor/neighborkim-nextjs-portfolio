@@ -14,7 +14,7 @@ export default function ProjectItem({data}: any) {
         // <div className="flex flex-col p-3 m-3 bg-slate-700 rounded-xl">
 
         <div className="xl:w-1/4 md:w-1/2 p-3">
-            <div className="bg-slate-200 dark:bg-slate-700 p-6 rounded-lg">
+            <div className="bg-slate-100 dark:bg-slate-700 p-6 rounded-lg">
                 <img className="rounded object-cover object-center mb-6" src={imgSrc} alt="content"/>
                 <h3 className="tracking-widest dark:text-blue-400 text-blue-600 text-xs font-medium title-font">SUBTITLE</h3>
                 <h2 className="text-lg text-gray-900 font-medium title-font mb-3">{title}</h2>

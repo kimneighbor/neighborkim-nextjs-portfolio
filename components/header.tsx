@@ -8,7 +8,7 @@ export default function Header() {
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <Link href="/" legacyBehavior>
             <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-              <img src="/favicon.ico" alt="logo" className="w-12 h-12 "/>
+              <img src="/neighborkimlogo.png" alt="logo" className="w-12 h-12 "/>
 
               <span className="ml-3 text-xl">NeighborKim.com</span>
             </a>
@@ -18,7 +18,7 @@ export default function Header() {
             <Link href="/" legacyBehavior>
               <a className="mr-5 hover:text-gray-900">홈</a>
             </Link>
-            <Link href="/projects" legacyBehavior>
+            <Link href="/pages/projects" legacyBehavior>
               <a className="mr-5 hover:text-gray-900">프로젝트</a>
             </Link>
 
