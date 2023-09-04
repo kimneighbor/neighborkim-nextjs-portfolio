@@ -7,14 +7,8 @@ const nextConfig = {
         'images.unsplash.com',
         'prod-files-secure.s3.us-west-2.amazonaws.com'
     ],
-      format: ['image/png', 'image/webp', 'image/jpeg']
   }
 }
 
 module.exports = nextConfig
 
-
-console.log('\\    /\\');
-console.log(' )  ( \')');
-console.log('(  /  )');
-console.log(' \\(__)|');
