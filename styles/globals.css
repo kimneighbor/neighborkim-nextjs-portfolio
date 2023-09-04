@@ -4,11 +4,11 @@
 
 
 .bg-primary {
-  @apply bg-white dark:bg-slate-800
+  @apply bg-white dark:bg-slate-900 transition-colors duration-1000 ease-in-out
 }
 
 .btn-project {
-  @apply inline-flex text-white dark:text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg
+  @apply inline-flex text-white dark:text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg transition-colors duration-1000 ease-in-out
 }
 
 
@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 
 footer {
   @apply text-gray-600 dark:text-white
-  bg-gray-100 dark:bg-slate-600/20
+  bg-gray-100 dark:bg-slate-600/20 transition-colors duration-1000 ease-in-out
 }
 
 a {
