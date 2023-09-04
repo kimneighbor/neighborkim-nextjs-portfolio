@@ -19,7 +19,7 @@ export default function Hero() {
           프레임워크와 기술 경험
         </p>
         <div className="flex justify-center">
-          <Link href="/pages/projects">
+          <Link href="/projects">
             <button className="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">
               프로젝트 보러가기
             </button>

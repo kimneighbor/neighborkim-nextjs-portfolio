@@ -18,7 +18,7 @@ export default function Header() {
             <Link href="/" legacyBehavior>
               <a className="mr-5 hover:text-gray-900">홈</a>
             </Link>
-            <Link href="/pages/projects" legacyBehavior>
+            <Link href="/projects" legacyBehavior>
               <a className="mr-5 hover:text-gray-900">프로젝트</a>
             </Link>
 
