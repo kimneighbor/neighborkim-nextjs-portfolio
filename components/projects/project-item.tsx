@@ -15,44 +15,38 @@ export default function ProjectItem({data}: any) {
     return (
         // <div className="flex flex-col p-3 m-3 bg-slate-700 rounded-xl">
 
-        <div className="xl:w-1/4 md:w-1/2 p-3 ">
-            <div className="bg-slate-100 dark:bg-slate-700 rounded-lg transition-colors duration-1000 ease-in-out">
+        <div className="xl:w-1/4 md:w-1/2 p-3">
+            <div
+                className="bg-slate-100 dark:bg-slate-700 rounded-lg transition-colors duration-1000 ease-in-out h-full">
                 <img className="rounded-t-md object-cover object-center" src={imgSrc} alt="content"/>
-                <div className="p-4">
+                <div className="p-5">
                     <h3 className="tracking-widest dark:text-blue-400 text-blue-600 text-xs font-medium title-font">{subtitle}</h3>
-                    <h2 className="text-lg text-gray-900 font-medium title-font">{title}</h2>
+                    <h2 className="text-xl text-gray-900 font-medium title-font">{title}</h2>
                     {/*<p className="leading-relaxed text-base">{description}</p>*/}
-                    <p className="leading-relaxed text-base mb-1">
-                        {description.length > 40 ? `${description.substring(0, 45)}...` : description}
+                    <p className="leading-relaxed text-base mb-5">
+                        {description.length > 41 ? `${description.substring(0, 40)}...` : description}
                     </p>
 
-                    {/*조건부 렌더링. github가 있으면 아이콘을 보여주고 없으면 아이콘을 보여주지 않는다.*/}
-                    {github && (
-                        <a href={github} target="_blank" rel="noopener noreferrer">
-                            <GitHubLink/>
-                        </a>
-                    )}
-
-                    {velog && (
-                        <a href={velog} target="_blank" rel="noopener noreferrer">
-                            <VelogLink/>
-                        </a>
-                    )}
-
-
-                    <div className="flex items-start mt-2 ">
+                    <div className="flex items-start mb-3 ">
                         {tags.map((aTag: any) => (
-                            <h2 className="px-2 py-0.5 mr-2 rounded-md bg-blue-200 dark:bg-blue-600 "
+                            <h2 className="text-sm px-2 py-0.5 mr-2 rounded-md bg-blue-200 dark:bg-blue-600 "
                                 key={aTag.id}>{aTag.name}</h2>
                         ))}
                     </div>
 
+                        {/*조건부 렌더링. github가 있으면 아이콘을 보여주고 없으면 아이콘을 보여주지 않는다.*/}
+                        {github && (
+                            <a href={github} target="_blank" rel="noopener noreferrer">
+                                <GitHubLink/>
+                            </a>
+                        )}
+                        {velog && (
+                            <a href={velog} target="_blank" rel="noopener noreferrer">
+                                <VelogLink/>
+                            </a>
+                        )}
+
                 </div>
-                {/*<img*/}
-                {/*    alt="image"*/}
-                {/*    src={imgSrc}*/}
-                {/*    style={{ width: "100%", height: "auto" }} // CSS 스타일을 직접 적용*/}
-                {/*/>*/}
             </div>
         </div>
 
