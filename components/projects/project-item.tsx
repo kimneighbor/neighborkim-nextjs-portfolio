@@ -17,7 +17,7 @@ export default function ProjectItem({data}: any) {
 
         <div className="xl:w-1/4 md:w-1/2 p-3">
             <div
-                className="bg-slate-100 dark:bg-slate-700 rounded-lg transition-colors duration-1000 ease-in-out h-full">
+                className="bg-white dark:bg-slate-800 rounded-lg transition-colors duration-1000 ease-in-out h-full">
                 <img className="rounded-t-md object-cover object-center" src={imgSrc} alt="content"/>
                 <div className="p-5">
                     <h3 className="tracking-widest dark:text-blue-400 text-blue-600 text-xs font-medium title-font">{subtitle}</h3>

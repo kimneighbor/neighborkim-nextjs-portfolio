@@ -4,7 +4,7 @@
 
 
 .bg-primary {
-  @apply bg-white dark:bg-slate-900 transition-colors duration-1000 ease-in-out
+  @apply bg-gray-200 dark:bg-slate-900 transition-colors duration-1000 ease-in-out
 }
 
 .btn-project {
