@@ -1,6 +1,5 @@
 import Link from "next/link";
-import Animation from "./animation";
-import Image from "next/image";
+
 
 export default function Hero() {
   return (
