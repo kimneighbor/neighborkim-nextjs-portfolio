@@ -21,11 +21,21 @@ export default function ContactUs() {
                     </div>
 
                     <div className="m-3">
+                        <Link href="https://open.kakao.com/o/so5aLeFf"
+                              target="_blank">
+                            <button
+                                className="flex mx-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">
+                                카카오톡
+                            </button>
+                        </Link>
+                    </div>
+
+                    <div className="m-3">
                         <Link href="mailto:designkimdh@gmail.com"
                               target="_blank">
                             <button
                                 className="flex mx-auto text-white bg-blue-500 border-0 py-2 px-6  focus:outline-none hover:bg-blue-600 rounded text-lg">
-                                Email
+                                E-mail
                             </button>
                         </Link>
                     </div>
