@@ -12,13 +12,37 @@ export default function ProjectItem({data}: any) {
     const imgSrc = data.cover.file?.url || data.cover.external.url
     const tags = data.properties.Tags.multi_select
 
+    function getColorByTagName(atagName: any) {
+        // 태그 이름에 따른 색상 변경
+        switch (atagName) {
+            case 'Next.js':
+                return 'bg-gray-400 dark:bg-gray-600';
+            case 'TypeScript':
+                return 'bg-blue-400 dark:bg-blue-600';
+            case 'JavaScript':
+                return 'bg-yellow-400 dark:bg-yellow-600';
+            case 'React':
+                return 'bg-sky-400 dark:bg-sky-600';
+            case 'topic':
+                return 'bg-red-400 dark:bg-red-600';
+            case 'TailwindCSS':
+                return 'bg-indigo-400 dark:bg-indigo-600';
+
+            default:
+                return 'bg-blue-200 dark:bg-blue-500'; // 기본값
+        }
+    }
+
 
     return (
         // <div className="flex flex-col p-3 m-3 bg-slate-700 rounded-xl">
 
         <div className="xl:w-1/4 md:w-1/2 p-3">
             <div
-                className="bg-white dark:bg-slate-800 rounded-lg transition-colors duration-1000 ease-in-out h-full">
+                className="bg-white dark:bg-slate-800 rounded-lg transition-colors duration-1000 ease-in-out h-full
+                shadow-lg
+                shadow-gray-400
+                dark:shadow-slate-950">
                 {/*<img className="rounded-t-md object-cover object-center" src={imgSrc} alt="content"/>*/}
                 <Image className="rounded-t-md object-cover object-center"
                        src={imgSrc}
@@ -26,6 +50,7 @@ export default function ProjectItem({data}: any) {
                        width={768}
                        height={432}
                 />
+
 
                 <div className="p-5">
                     <h3 className="tracking-widest dark:text-blue-400 text-blue-600 text-xs font-medium title-font">{subtitle}</h3>
@@ -35,13 +60,15 @@ export default function ProjectItem({data}: any) {
                         {description.length > 41 ? `${description.substring(0, 40)}...` : description}
                     </p>
 
+
                     {/*Tags*/}
-                    <div className="flex items-start mb-3 ">
+                    <div className="flex flex-wrap items-start mb-3 ">
                         {tags.map((aTag: any) => (
-                            <h2 className="text-xs px-2 py-0.5 mr-2 rounded-md bg-blue-200 dark:bg-blue-600 "
-                                key={aTag.id}>{aTag.name}</h2>
+                            <h6 className={`text-xs px-2 py-0.5 mr-2 mb-2 rounded-md ${getColorByTagName(aTag.name)}`}
+                                key={aTag.id}>{aTag.name}</h6>
                         ))}
                     </div>
+
 
                     {/*조건부 렌더링. github가 있으면 아이콘을 보여주고 없으면 아이콘을 보여주지 않는다.*/}
                     {github && (

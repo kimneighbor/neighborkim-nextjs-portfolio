@@ -4,7 +4,7 @@
 
 
 .bg-primary {
-  @apply bg-gray-200 dark:bg-slate-900 transition-colors duration-1000 ease-in-out
+  @apply bg-white dark:bg-slate-900 transition-colors duration-1000 ease-in-out
 }
 
 .btn-project {
@@ -13,10 +13,13 @@
 
 
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
   @apply text-slate-900 dark:text-white
 }
 
+h6 {
+  @apply text-white
+}
 footer {
   @apply text-gray-600 dark:text-white
   bg-gray-100 dark:bg-slate-600/20 transition-colors duration-1000 ease-in-out
