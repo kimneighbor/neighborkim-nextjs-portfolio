@@ -24,7 +24,7 @@ export default function ProjectItem({data}: any) {
             case 'React':
                 return 'bg-sky-400 dark:bg-sky-600';
             case 'topic':
-                return 'bg-red-400 dark:bg-red-600';
+                return 'bg-violet-600 dark:bg-violet-600';
             case 'TailwindCSS':
                 return 'bg-indigo-400 dark:bg-indigo-600';
 
@@ -53,10 +53,10 @@ export default function ProjectItem({data}: any) {
 
 
                 <div className="p-5">
-                    <h3 className="tracking-widest dark:text-blue-400 text-blue-600 text-xs font-medium title-font">{subtitle}</h3>
-                    <h2 className="text-xl text-gray-900 font-medium title-font">{title}</h2>
+                    <h3 className="tracking-widest dark:text-blue-400 text-blue-600 text-xs font-medium title-font mb-1">{subtitle}</h3>
+                    <h2 className="text-xl text-gray-900 font-medium title-font mb-1">{title}</h2>
                     {/*<p className="leading-relaxed text-base">{description}</p>*/}
-                    <p className="leading-relaxed text-base mb-5">
+                    <p className="leading-relaxed text-base mb-3">
                         {description.length > 41 ? `${description.substring(0, 40)}...` : description}
                     </p>
 
