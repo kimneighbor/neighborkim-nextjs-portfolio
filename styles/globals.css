@@ -32,3 +32,21 @@ a {
 p {
   @apply text-slate-500 dark:text-slate-400
 }
+
+
+@layer components {
+  @keyframes slide-up {
+    0% {
+      transform: translateY(5%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .slide-up {
+    animation: slide-up 1s ease-in-out forwards;
+  }
+}

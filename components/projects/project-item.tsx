@@ -37,7 +37,7 @@ export default function ProjectItem({data}: any) {
     return (
         // <div className="flex flex-col p-3 m-3 bg-slate-700 rounded-xl">
 
-        <div className="xl:w-1/4 md:w-1/2 p-3">
+        <div className="xl:w-1/4 md:w-1/2 p-3 slide-up">
             <div
                 className="bg-white dark:bg-slate-800 rounded-lg transition-colors duration-1000 ease-in-out h-full
                 shadow-lg
@@ -62,7 +62,7 @@ export default function ProjectItem({data}: any) {
 
 
                     {/*Tags*/}
-                    <div className="flex flex-wrap items-start mb-3 ">
+                    <div className="flex flex-wrap items-start mb-3">
                         {tags.map((aTag: any) => (
                             <h6 className={`text-xs px-2 py-0.5 mr-2 mb-2 rounded-md ${getColorByTagName(aTag.name)}`}
                                 key={aTag.id}>{aTag.name}</h6>
