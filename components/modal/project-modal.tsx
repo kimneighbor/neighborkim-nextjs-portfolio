@@ -1,11 +1,11 @@
 import React from 'react';
 
-const ProjectModal = ({isVisible, onClose}:any) => {
+const ProjectModal = ({isVisible, onClose}: any) => {
 
     if (!isVisible) return null
 
-    const handleClose = (e:any) => {
-        if(e.target.id ==='wrapper')onClose();
+    const handleClose = (e: any) => {
+        if (e.target.id === 'wrapper') onClose();
     }
     return (
         <div className="fixed inset-0
@@ -21,7 +21,7 @@ const ProjectModal = ({isVisible, onClose}:any) => {
              onClick={handleClose}
         >
             <div className="w-[500px] flex flex-col">
-                <button className="text-blue-500 text-xl place-self-end" onClick={()=> onClose()}>X</button>
+                <button className="text-blue-500 text-xl place-self-end" onClick={() => onClose()}>X</button>
                 <div className="bg-blue-400 text-xl p-10 rounded-md ">
                     미완성 모달창 테스트
                 </div>

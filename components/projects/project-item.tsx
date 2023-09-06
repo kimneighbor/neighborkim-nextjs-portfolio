@@ -38,68 +38,66 @@ export default function ProjectItem({data}: any) {
     }
 
 
-
-
     return (
 
         // <div className="flex flex-col p-3 m-3 bg-slate-700 rounded-xl">
 
-            <div className="xl:w-1/4 md:w-1/2 p-3 slide-up"
+        <div className="xl:w-1/4 md:w-1/2 p-3 slide-up"
+        >
+            <div
+                className="rounded-lg h-full item-bg item-shadow"
+
             >
-                <div
-                    className="rounded-lg h-full item-bg item-shadow"
-
-                >
-                    {/*<img className="rounded-t-md object-cover object-center" src={imgSrc} alt="content"/>*/}
+                {/*<img className="rounded-t-md object-cover object-center" src={imgSrc} alt="content"/>*/}
 
 
-                    <Link href={imgurl} target="_blank">
-                        <Image className="rounded-t-md object-cover object-center"
-                               src={imgSrc}
-                               alt="content"
-                               width={768}
-                               height={432}
-                        />
-                        <div className="px-5 pt-5">
-                            <h3 className="tracking-widest dark:text-blue-400 text-blue-600 text-xs font-medium title-font mb-1">{subtitle}</h3>
-                            <h2 className="text-xl text-gray-900 font-medium title-font mb-1">{title}</h2>
-                            {/*<p className="leading-relaxed text-base">{description}</p>*/}
-                            <p className="leading-relaxed text-base mb-3">
-                                {description.length > 41 ? `${description.substring(0, 40)}...` : description}
-                            </p>
-
-                        </div>
-
-                    </Link>
-
-                    <div className="px-5 pb-5">
-
-                        {/*Tags*/}
-                        <div className="flex flex-wrap items-start mb-3">
-                            {tags.map((aTag: any) => (
-                                <h6 className={`text-xs px-2 py-0.5 mr-2 mb-2 rounded-md ${getColorByTagName(aTag.name)}`}
-                                    key={aTag.id}>{aTag.name}</h6>
-                            ))}
-                        </div>
-
-
-                        {/*조건부 렌더링. github가 있으면 아이콘을 보여주고 없으면 아이콘을 보여주지 않는다.*/}
-                        {github && (
-                            <a href={github} target="_blank" rel="noopener noreferrer">
-                                <GitHubLink/>
-                            </a>
-                        )}
-
-                        {velog && (
-                            <a href={velog} target="_blank" rel="noopener noreferrer">
-                                <VelogLink/>
-                            </a>
-                        )}
-
+                <Link href={imgurl} target="_blank">
+                    <Image className="rounded-t-md object-cover object-center"
+                           src={imgSrc}
+                           alt="content"
+                           width={768}
+                           height={432}
+                    />
+                    <div className="px-5 pt-5">
+                        <h3 className="tracking-widest dark:text-blue-400 text-blue-600 text-xs font-medium title-font mb-1">{subtitle}</h3>
+                        <h2 className="text-xl text-gray-900 font-medium title-font mb-1">{title}</h2>
+                        {/*<p className="leading-relaxed text-base">{description}</p>*/}
+                        <p className="leading-relaxed text-base mb-3">
+                            {description.length > 41 ? `${description.substring(0, 40)}...` : description}
+                        </p>
 
                     </div>
+
+                </Link>
+
+                <div className="px-5 pb-5">
+
+                    {/*Tags*/}
+                    <div className="flex flex-wrap items-start mb-3">
+                        {tags.map((aTag: any) => (
+                            <h6 className={`text-xs px-2 py-0.5 mr-2 mb-2 rounded-md ${getColorByTagName(aTag.name)}`}
+                                key={aTag.id}>{aTag.name}</h6>
+                        ))}
+                    </div>
+
+
+                    {/*조건부 렌더링. github가 있으면 아이콘을 보여주고 없으면 아이콘을 보여주지 않는다.*/}
+                    {github && (
+                        <a href={github} target="_blank" rel="noopener noreferrer">
+                            <GitHubLink/>
+                        </a>
+                    )}
+
+                    {velog && (
+                        <a href={velog} target="_blank" rel="noopener noreferrer">
+                            <VelogLink/>
+                        </a>
+                    )}
+
+
                 </div>
             </div>
+        </div>
 
     );
 }
