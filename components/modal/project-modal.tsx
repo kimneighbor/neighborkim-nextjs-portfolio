@@ -15,14 +15,15 @@ const ProjectModal = ({isVisible, onClose}: any) => {
         flex
         justify-center
         items-center
+        transition
 
         "
              id="wrapper"
              onClick={handleClose}
         >
-            <div className="w-[500px] flex flex-col">
-                <button className="text-blue-500 text-xl place-self-end" onClick={() => onClose()}>X</button>
-                <div className="bg-blue-400 text-xl p-10 rounded-md ">
+            <div className="w-[500px] flex flex-col slide-up ">
+                <button className="text-slate-200 dark:text-slate-600 text-xl place-self-end"  onClick={() => onClose()}>Close X</button>
+                <div className="bg-slate-200 dark:bg-slate-600 text-xl p-10 rounded-md ">
                     미완성 모달창 테스트
                 </div>
             </div>
