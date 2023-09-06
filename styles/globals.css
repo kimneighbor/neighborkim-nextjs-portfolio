@@ -11,6 +11,11 @@
   @apply inline-flex text-white dark:text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg transition-colors duration-1000 ease-in-out
 }
 
+.item-bg{
+  @apply bg-white dark:bg-slate-800 transition-colors duration-1000 ease-in-out
+
+}
+
 .item-shadow {
   @apply transition duration-300 ease-in-out
   shadow-lg shadow-gray-400 dark:shadow-slate-950
