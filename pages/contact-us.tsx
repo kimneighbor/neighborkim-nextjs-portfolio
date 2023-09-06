@@ -7,7 +7,7 @@ export default function ContactUs() {
         <Layout>
             <HEAD>
                 <title>NeighborKim.com</title>
-                <meta name="description" content="Learn Next.js"></meta>
+                <meta name="description" content="portfolio"></meta>
                 <link rel="icon" href="/favicon.ico"/>
             </HEAD>
 
