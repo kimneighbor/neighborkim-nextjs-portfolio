@@ -49,25 +49,25 @@ export default function ProjectItem({data}: any) {
 
 
                 <Link href={imgurl} target="_blank">
-
                     <Image className="rounded-t-md object-cover object-center"
                            src={imgSrc}
                            alt="content"
                            width={768}
                            height={432}
                     />
-                </Link>
-
-                <div className="p-5">
-                    <Link href={imgurl} target="_blank">
-
+                    <div className="px-5 pt-5">
                         <h3 className="tracking-widest dark:text-blue-400 text-blue-600 text-xs font-medium title-font mb-1">{subtitle}</h3>
                         <h2 className="text-xl text-gray-900 font-medium title-font mb-1">{title}</h2>
                         {/*<p className="leading-relaxed text-base">{description}</p>*/}
                         <p className="leading-relaxed text-base mb-3">
                             {description.length > 41 ? `${description.substring(0, 40)}...` : description}
                         </p>
-                    </Link>
+
+                    </div>
+
+                </Link>
+
+                <div className="px-5 pb-5">
 
                     {/*Tags*/}
                     <div className="flex flex-wrap items-start mb-3">
@@ -90,6 +90,7 @@ export default function ProjectItem({data}: any) {
                             <VelogLink/>
                         </a>
                     )}
+
 
                 </div>
             </div>
