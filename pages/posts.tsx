@@ -30,8 +30,8 @@ export default function Posts({projects}: any) {
                         {/*<div className="h-1 w-20 bg-blue-500 rounded"></div>*/}
                     </div>
                     <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
-                        이 섹션은 Projects 와 동일한 섹션이지만 subtitle 이 {"블로그"} 인 아이템만 가져옵니다. 따라서 Projects 컴포넌트에는 subtitle 이
-                        {"프로젝트"} 인 아이템만, Posts 컴포넌트에는 subtitle 이 {"블로그"} 인 아이템만 가져옵니다.
+                        이 섹션은 Projects와 동일한 섹션이지만 subtitle 이 블로그인 아이템만 가져옵니다. 따라서 Projects 컴포넌트에는 subtitle이
+                        프로젝트인 아이템만, Posts 컴포넌트에는 subtitle 이 블로그인 아이템만 가져옵니다.
 
                     </p>
 
