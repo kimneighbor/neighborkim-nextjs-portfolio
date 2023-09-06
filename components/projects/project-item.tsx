@@ -41,8 +41,12 @@ export default function ProjectItem({data}: any) {
             <div
                 className="bg-white dark:bg-slate-800 rounded-lg transition-colors duration-1000 ease-in-out h-full
                 shadow-lg
-                shadow-gray-400
-                dark:shadow-slate-950">
+                shadow-gray-400 shadow-lg
+                hover:shadow-slate-600
+                dark:shadow-slate-950
+                hover:dark:shadow-blue-800 shadow-lg
+                hover:-translate-y-2 transition duration-200 ease-in-out
+                ">
                 {/*<img className="rounded-t-md object-cover object-center" src={imgSrc} alt="content"/>*/}
                 <Image className="rounded-t-md object-cover object-center"
                        src={imgSrc}
