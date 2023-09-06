@@ -23,7 +23,7 @@ export default function Projects({projects}: any) {
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-wrap w-full mb-20">
                         <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-                            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Notion API
+                            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Projects / Notion API
 
                                 {/*/ Projects : {projects.results.length}*/}
 
@@ -48,9 +48,9 @@ export default function Projects({projects}: any) {
 
 
                     <div className="flex flex-wrap -m-4">
-
                         {/*project-item*/}
-                        {projects.results.map((aProject: any) => (
+                        {/*서브타이틀이 프로젝트인 아이템만 가져온다*/}
+                        {projects.results.filter((aProject: any) => aProject.properties.Subtitle.rich_text[0]?.plain_text === "프로젝트").map((aProject: any) => (
                             <ProjectItem key={aProject.id} data={aProject}/>
                         ))}
                     </div>
@@ -105,8 +105,8 @@ export async function getStaticProps() {
     return {
         props: {
             projects
-            // allPostsData
-        }
+        },
+        revalidate: 10, // 페이지가 재생성될 시간 간격(초)
     };
 
 }
