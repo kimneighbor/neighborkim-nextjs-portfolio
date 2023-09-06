@@ -1,5 +1,6 @@
 import {GitHubLink, VelogLink} from '../icon-button';
 import Image from "next/legacy/image";
+import Link from "next/link";
 
 export default function ProjectItem({data}: any) {
 
@@ -11,6 +12,8 @@ export default function ProjectItem({data}: any) {
     const description = data.properties.Description.rich_text[0]?.plain_text
     const imgSrc = data.cover.file?.url || data.cover.external.url
     const tags = data.properties.Tags.multi_select
+
+    const imgurl = data.properties.imgurl?.url
 
     function getColorByTagName(atagName: any) {
         // 태그 이름에 따른 색상 변경
@@ -40,25 +43,31 @@ export default function ProjectItem({data}: any) {
         <div className="xl:w-1/4 md:w-1/2 p-3 slide-up">
             <div
                 className="bg-white dark:bg-slate-800 rounded-lg transition-colors duration-1000 ease-in-out h-full
-                item-shadow
-                 ">
+                item-shadow"
+            >
                 {/*<img className="rounded-t-md object-cover object-center" src={imgSrc} alt="content"/>*/}
-                <Image className="rounded-t-md object-cover object-center"
-                       src={imgSrc}
-                       alt="content"
-                       width={768}
-                       height={432}
-                />
 
+
+                <Link href={imgurl} target="_blank">
+
+                    <Image className="rounded-t-md object-cover object-center"
+                           src={imgSrc}
+                           alt="content"
+                           width={768}
+                           height={432}
+                    />
+                </Link>
 
                 <div className="p-5">
-                    <h3 className="tracking-widest dark:text-blue-400 text-blue-600 text-xs font-medium title-font mb-1">{subtitle}</h3>
-                    <h2 className="text-xl text-gray-900 font-medium title-font mb-1">{title}</h2>
-                    {/*<p className="leading-relaxed text-base">{description}</p>*/}
-                    <p className="leading-relaxed text-base mb-3">
-                        {description.length > 41 ? `${description.substring(0, 40)}...` : description}
-                    </p>
+                    <Link href={imgurl} target="_blank">
 
+                        <h3 className="tracking-widest dark:text-blue-400 text-blue-600 text-xs font-medium title-font mb-1">{subtitle}</h3>
+                        <h2 className="text-xl text-gray-900 font-medium title-font mb-1">{title}</h2>
+                        {/*<p className="leading-relaxed text-base">{description}</p>*/}
+                        <p className="leading-relaxed text-base mb-3">
+                            {description.length > 41 ? `${description.substring(0, 40)}...` : description}
+                        </p>
+                    </Link>
 
                     {/*Tags*/}
                     <div className="flex flex-wrap items-start mb-3">
@@ -75,6 +84,7 @@ export default function ProjectItem({data}: any) {
                             <GitHubLink/>
                         </a>
                     )}
+
                     {velog && (
                         <a href={velog} target="_blank" rel="noopener noreferrer">
                             <VelogLink/>
@@ -83,6 +93,7 @@ export default function ProjectItem({data}: any) {
 
                 </div>
             </div>
+
         </div>
 
     );

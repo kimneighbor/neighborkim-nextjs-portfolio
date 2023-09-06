@@ -1,6 +1,6 @@
 export function GitHubLink() {
     return (
-        <div className="flex items-center">
+        <div className="flex flex-wrap items-center">
             <svg
                 fill="currentColor"
                 stroke="currentColor"
