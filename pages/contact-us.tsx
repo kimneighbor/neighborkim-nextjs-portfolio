@@ -40,15 +40,6 @@ export default function ContactUs() {
                         </Link>
                     </div>
 
-                    <div className="m-3">
-                        <Link href="tel:010-0000-0000"
-                              target="_blank">
-                            <button
-                                className="flex mx-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">
-                                Phone
-                            </button>
-                        </Link>
-                    </div>
                 </div>
                 <div className="p-2 w-full pt-8 mt-8 border-gray-200 text-center">
                     <p className="leading-normal my-5">Donghwan Kim
