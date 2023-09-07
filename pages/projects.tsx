@@ -14,7 +14,7 @@ export default function Projects({projects}: any) {
         <Fragment>
             <Layout>
                 <HEAD>
-                    <title>NeighborKim.com</title>
+                    <title>Kimdonghwan.com</title>
                     <meta name="description" content="portfolio"></meta>
                     <link rel="icon" href="/favicon.ico"/>
                 </HEAD>

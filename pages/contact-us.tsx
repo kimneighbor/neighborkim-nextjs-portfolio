@@ -6,7 +6,7 @@ export default function ContactUs() {
     return (
         <Layout>
             <HEAD>
-                <title>NeighborKim.com</title>
+                <title>kimdonghwan.com</title>
                 <meta name="description" content="portfolio"></meta>
                 <link rel="icon" href="/favicon.ico"/>
             </HEAD>

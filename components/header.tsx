@@ -9,7 +9,7 @@ export default function Header() {
                     <Link href="/" legacyBehavior>
                         <a className="flex title-font font-medium items-center text-gray-900 mb-4 mr-4 md:mb-0">
                             <img src="/neighborkimlogo.png" alt="logo" className="w-12 h-12 "/>
-                            <span className="ml-3 text-xl">NeighborKim.com</span>
+                            <span className="ml-3 text-xl">Kimdonghwan.com</span>
                         </a>
                     </Link>
                     <nav

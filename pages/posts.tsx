@@ -9,7 +9,7 @@ export default function Posts({projects}: any) {
         <Fragment>
             <Layout>
                 <HEAD>
-                    <title>NeighborKim.com</title>
+                    <title>kimdonghwan.com</title>
                     <meta name="description" content="portfolio"></meta>
                     <link rel="icon" href="/favicon.ico"/>
                 </HEAD>
