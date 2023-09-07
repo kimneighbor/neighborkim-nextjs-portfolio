@@ -51,7 +51,7 @@ export default function ProjectItem({data}: any) {
                 {/*<img className="rounded-t-md object-cover object-center" src={imgSrc} alt="content"/>*/}
 
 
-                <Link href={imgurl} target="_blank">
+                <Link href={imgurl} >
                     <Image className="rounded-t-md object-cover object-center"
                            src={imgSrc}
                            alt="content"
@@ -83,13 +83,13 @@ export default function ProjectItem({data}: any) {
 
                     {/*조건부 렌더링. github가 있으면 아이콘을 보여주고 없으면 아이콘을 보여주지 않는다.*/}
                     {github && (
-                        <a href={github} target="_blank" rel="noopener noreferrer">
+                        <a href={github} rel="noopener noreferrer">
                             <GitHubLink/>
                         </a>
                     )}
 
                     {velog && (
-                        <a href={velog} target="_blank" rel="noopener noreferrer">
+                        <a href={velog} rel="noopener noreferrer">
                             <VelogLink/>
                         </a>
                     )}
