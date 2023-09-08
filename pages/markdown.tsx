@@ -5,26 +5,15 @@ import ReactMarkdown from "react-markdown";
 
 const markdowntext = `
 
-# -
+
+# 👋 
+## 이 페이지는 현재 markdown을 사용하기 위한 테스트 중이며 밑에 내용들은 저와 무관한 테스트용 더미 데이터 입니다.
 
 
-# 👋 React 프론트엔드 개발, Go 백엔드 개발 등에 숙련된 **10년 차 소프트웨어 엔지니어**입니다. 현재 **서울**에 있습니다.
+---
 
 
-
-### 연락처
-
-[📧 adalovelace@mail.com](mailto:adalovelace@mail.com)
-
-[🐦 twitter.com/adalovelace](http://twitter.com/notionhq)
-
-[🔗 linkedin.com/in/adalovelace](https://www.linkedin.com/company/notionhq/mycompany/)
-
-[👾 github.com/adalovelace](https://github.com/makenotion)
-
-# 경력
-
-### 소프트웨어 엔지니어 **II**
+## 프론트엔드 엔지니어
 
 **K사***, 서울시 강남구 – (2019년 12월 - 현재)*
 
@@ -33,21 +22,21 @@ const markdowntext = `
 - PostgreSQL과 Node.js(Express/Hapi) 및 GoLang으로 구축된 백엔드 웹훅 및 통합 개발에 참여했습니다.
 - 팀에 합류한 초급 개발자 코치로서 페어 프로그래밍과 몹 프로그래밍 세션을 진행하고, 시니어 엔지니어와 함께 로드맵 및 기능 우선순위를 정의했습니다.
 
-### QA 자동화 엔지니어
+## QA 자동화 엔지니어
 
 **J사***, 서울시 강남구  – (2014년 5월 - 2019년 10월)*
 
 - Node.js, Mocha, Chai와 Behat 및 PHP를 사용해 회사의 핵심 API 및 결제 API를 위한 자동 인수/계약 테스트를 구축했습니다. API 설계 및 기본 로직의 일관성을 유지하기 위해 새로운 기능 개발을 검토하고 검증했습니다.
 - 기술 분야에서의 다양성과 여성(Diversity and Women in Tech) 이니셔티브에 적극적으로 참여하면서 정기적인 전사 미팅과 다양한 제안을 추진했습니다. 직장 동료의 강연 제안서 작성을 도왔습니다.
 
-### 소프트웨어 테스터
+## 소프트웨어 테스터
 
 **C사***, 대전광역시 유성구 – (2012년 8월 - 2014년 4월)*
 
 - 선적 컨테이너 터미널 및 물류 관리 웹 앱의 기능 테스트를 계획하고 실행했습니다.
 - 새로운 클라이언트 요구 사항을 평가하고, 사용 사례(use case)를 정의했으며, 로컬 테스트 환경을 유지보수했습니다.
 
-### **QA 분석가**
+## **QA 분석가**
 
 **B사***, 서울시 강남구 – (2011년 4월 - 2012년 6월)*
 

@@ -28,7 +28,7 @@ export default function Header() {
                             <a className="mr-7 hover:text-gray-900">Contact</a>
                         </Link>
                         <Link href="/markdown" legacyBehavior>
-                            <a className="mr-7 hover:text-gray-900">MarkDown Test</a>
+                            <a className="hover:text-gray-900">MDTest</a>
                         </Link>
                     </nav>
                     {/* 다크모드 토글 버튼 */}
