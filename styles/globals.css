@@ -69,36 +69,152 @@ p {
 
 
 
-.markdown {
-  /* Typography */
-  line-height: 1.6;
-  font-size: 18px;
+
+.markdown a,
+.markdown a.visited {
+  color: inherit;
+  text-decoration: underline;
+}
+
+
+.markdown h1,
+.markdown h2,
+.markdown h3 {
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
 .markdown h1 {
-  font-size: 2em;
+  font-size: 1.875rem;
+  margin-top: 1.875rem;
 }
 
 .markdown h2 {
-  font-size: 1.75em;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .markdown h3 {
-  font-size: 1.5em;
+  font-size: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.markdown source {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 1.5em;
+  word-break: break-all;
+}
+
+
+.markdown figure {
+  margin: 1.25em 0;
+  page-break-inside: avoid;
+}
+
+.markdown figcaption {
+  opacity: 0.5;
+  font-size: 85%;
+  margin-top: 0.5em;
+}
+
+.markdown mark {
+  background-color: transparent;
+}
+
+
+.markdown hr {
+  background: transparent;
+  display: block;
+  width: 100%;
+  height: 1px;
+  visibility: visible;
+  border: none;
+  border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+.markdown img {
+  max-width: 100%;
+}
+
+@media only print {
+  .markdown img {
+    max-height: 100vh;
+    object-fit: contain;
+  }
+}
+
+@page {
+  margin: 1in;
+}
+
+
+.markdown table,
+.markdown th,
+.markdown td {
+  border: 1px solid rgba(55, 53, 47, 0.09);
+  border-collapse: collapse;
+}
+
+.markdown table {
+  border-left: none;
+  border-right: none;
+}
+
+.markdown th,
+.markdown td {
+  font-weight: normal;
+  padding: 0.25em 0.5em;
+  line-height: 1.5;
+  min-height: 1.5em;
+  text-align: left;
+}
+
+.markdown th {
+  color: rgba(55, 53, 47, 0.6);
+}
+
+.markdown ol,
+.markdown ul {
+  margin: 0;
+  margin-block-start: 0.6em;
+  margin-block-end: 0.6em;
+}
+
+.markdown li > ol:first-child,
+.markdown li > ul:first-child {
+  margin-block-start: 0.6em;
+}
+
+.markdown ul > li {
+  list-style: disc;
 }
 
 
 
-/* Blockquote */
-.markdown blockquote {
-  padding-left: .8rem;
-  border-left : solid .2rem #ddd ;
-  margin-left :0 ;
-  color : #aaa ;
+.markdown ul {
+  padding-inline-start: 1.7em;
 }
 
-/* Code blocks and inline code */
-.markdown pre,
-.markdown code {
-  background-color : #f9f9f9 ;
+.markdown ul > li {
+  padding-left: 0.1em;
 }
+
+.markdown ol {
+  padding-inline-start: 1.6em;
+}
+
+.markdown ol > li {
+  padding-left: 0.2em;
+}
+
+.markdown .mono ol {
+  padding-inline-start: 2em;
+}
+
+.markdown .mono ol > li {
+  text-indent: -0.4em;
+}
+
