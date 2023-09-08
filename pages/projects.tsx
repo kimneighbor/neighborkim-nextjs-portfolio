@@ -19,6 +19,8 @@ export default function Projects({projects}: any) {
                     <link rel="icon" href="/favicon.ico"/>
                 </HEAD>
 
+                <section className="flex min-h-[calc(100vh-180px)] flex-col items-center justify-center text-gray-600">
+
 
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-wrap w-full mb-20">
@@ -54,9 +56,11 @@ export default function Projects({projects}: any) {
                             <ProjectItem key={aProject.id} data={aProject}/>
                         ))}
                     </div>
-
-
                 </div>
+
+                </section>
+
+
             </Layout>
             {/**모달창 테스트*/}
             <ProjectModal isVisible={showProjectModal}
@@ -97,9 +101,6 @@ export async function getStaticProps() {
     const projects = await res.json()
 
 
-    const projectNames = projects.results.map((aProject: any) => (
-        aProject.properties.Name.title[0].plain_text
-    ))
 
 
     return {

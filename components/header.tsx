@@ -7,7 +7,7 @@ export default function Header() {
             <header className="text-gray-600 body-font">
                 <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
                     <Link href="/" legacyBehavior>
-                        <a className="flex title-font font-medium items-center text-gray-900 mb-4 mr-4 md:mb-0">
+                        <a className="flex title-font font-medium items-center text-gray-900 mb-4 mr-4 md:mb-1">
                             <img src="/neighborkimlogo.png" alt="logo" className="w-12 h-12 "/>
                             <span className="ml-3 text-xl">Kimdonghwan.com</span>
                         </a>
@@ -27,6 +27,9 @@ export default function Header() {
                         <Link href="/contact-us" legacyBehavior>
                             <a className="mr-7 hover:text-gray-900">Contact</a>
                         </Link>
+                        {/*<Link href="/markdown" legacyBehavior>*/}
+                        {/*    <a className="mr-7 hover:text-gray-900">MarkDown Test</a>*/}
+                        {/*</Link>*/}
                     </nav>
                     {/* 다크모드 토글 버튼 */}
                     <DarkToggleButton/>

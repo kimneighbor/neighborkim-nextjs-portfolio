@@ -68,3 +68,37 @@ p {
 }
 
 
+
+.markdown {
+  /* Typography */
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.markdown h1 {
+  font-size: 2em;
+}
+
+.markdown h2 {
+  font-size: 1.75em;
+}
+
+.markdown h3 {
+  font-size: 1.5em;
+}
+
+
+
+/* Blockquote */
+.markdown blockquote {
+  padding-left: .8rem;
+  border-left : solid .2rem #ddd ;
+  margin-left :0 ;
+  color : #aaa ;
+}
+
+/* Code blocks and inline code */
+.markdown pre,
+.markdown code {
+  background-color : #f9f9f9 ;
+}
