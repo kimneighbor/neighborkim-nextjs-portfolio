@@ -21,21 +21,21 @@ export default function ContactUs() {
                         <p className="lg:w-2/3 mx-auto leading-relaxed text-base"></p>
                     </div>
 
-                    <div className="m-3">
+                    <div className="m-3 slide-up">
                         <Link href="https://open.kakao.com/o/so5aLeFf"
                               target="_blank">
                             <button
-                                className="flex mx-auto w-1/3 justify-center text-white bg-slate-600 border-0 py-2 px-6  focus:outline-none hover:bg-amber-500 rounded text-lg">
+                                className="w-1/2 lg:w-1/4 flex mx-auto justify-center text-white bg-slate-600 border-0 py-2 px-6  focus:outline-none hover:bg-amber-500 rounded text-lg hover:-translate-y-1 duration-300">
                                 카카오톡
                             </button>
                         </Link>
                     </div>
 
-                    <div className="m-3">
+                    <div className="m-3 slide-up">
                         <Link href="mailto:designkimdh@gmail.com"
                               target="_blank">
                             <button
-                                className="flex mx-auto w-1/3 justify-center text-white bg-slate-600 border-0 py-2 px-6  focus:outline-none hover:bg-blue-600 rounded text-lg">
+                                className="w-1/2 lg:w-1/4 flex mx-auto justify-center text-white bg-slate-600 border-0 py-2 px-6  focus:outline-none hover:bg-blue-600 rounded text-lg hover:-translate-y-1 duration-300">
                                 E-mail
                             </button>
                         </Link>
