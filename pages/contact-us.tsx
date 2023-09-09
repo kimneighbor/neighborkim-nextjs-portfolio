@@ -1,6 +1,7 @@
 import Layout from "@/components/layout";
 import HEAD from "next/head";
 import Link from "next/link";
+import {KakaoTalk,EmailIcon} from "@/components/icon-button";
 
 export default function ContactUs() {
     return (
@@ -24,7 +25,7 @@ export default function ContactUs() {
                         <Link href="https://open.kakao.com/o/so5aLeFf"
                               target="_blank">
                             <button
-                                className="flex mx-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">
+                                className="flex mx-auto w-1/3 justify-center text-white bg-slate-600 border-0 py-2 px-6  focus:outline-none hover:bg-amber-500 rounded text-lg">
                                 카카오톡
                             </button>
                         </Link>
@@ -34,7 +35,7 @@ export default function ContactUs() {
                         <Link href="mailto:designkimdh@gmail.com"
                               target="_blank">
                             <button
-                                className="flex mx-auto text-white bg-blue-500 border-0 py-2 px-6  focus:outline-none hover:bg-blue-600 rounded text-lg">
+                                className="flex mx-auto w-1/3 justify-center text-white bg-slate-600 border-0 py-2 px-6  focus:outline-none hover:bg-blue-600 rounded text-lg">
                                 E-mail
                             </button>
                         </Link>
