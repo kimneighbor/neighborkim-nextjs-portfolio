@@ -31,6 +31,8 @@ export default function ProjectItem({data}: any) {
                 return 'bg-violet-600 dark:bg-violet-600';
             case 'TailwindCSS':
                 return 'bg-indigo-400 dark:bg-indigo-600';
+            case 'MongoDB':
+                return 'bg-green-400 dark:bg-green-600';
 
             default:
                 return 'bg-blue-200 dark:bg-blue-500'; // 기본값
@@ -57,6 +59,7 @@ export default function ProjectItem({data}: any) {
                            alt="content"
                            width={768}
                            height={432}
+                           loading="lazy"
                     />
                     <div className="px-5 pt-5">
                         <h3 className="tracking-widest dark:text-blue-400 text-blue-600 text-xs font-medium title-font mb-1">{subtitle}</h3>
