@@ -59,6 +59,7 @@ export default function ProjectItem({data}: any) {
                            alt="content"
                            width={768}
                            height={432}
+                           // 이미지 지연 로딩으로 이미지 로드실패 방지
                            loading="lazy"
                     />
                     <div className="px-5 pt-5">
