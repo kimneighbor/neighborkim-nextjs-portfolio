@@ -59,9 +59,9 @@ export default function ProjectItem({data}: any) {
                            alt="content"
                            width={768}
                            height={432}
-                           // loading="lazy"
-                           // 이미지 지연 로딩으로 이미지 로드실패 방지
-                           placeholder="empty"
+                        //    // loading="lazy"
+                        //    // 이미지 지연 로딩으로 이미지 로드실패 방지
+                        //    placeholder="empty"
                     />
                     <div className="px-5 pt-5">
                         <h3 className="tracking-widest dark:text-blue-400 text-blue-600 text-xs font-medium title-font mb-1">{subtitle}</h3>
