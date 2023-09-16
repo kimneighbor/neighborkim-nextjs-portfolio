@@ -33,6 +33,8 @@ export default function ProjectItem({ data }: any) {
         return "bg-green-400 dark:bg-green-600";
       case "Prisma":
         return "bg-teal-400 dark:bg-teal-600";
+      case "NextAuth":
+        return "bg-orange-400 dark:bg-orange-600";
 
       default:
         return "bg-blue-200 dark:bg-blue-500"; // 기본값
