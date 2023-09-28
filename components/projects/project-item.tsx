@@ -52,7 +52,7 @@ export default function ProjectItem({ data }: any) {
           <Image
             className="rounded-t-md object-cover object-center"
             src={imgSrc}
-            alt="content"
+            alt="이미지 로드 실패"
             width={768}
             height={432}
             //    // loading="lazy"
